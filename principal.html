@@ -1,0 +1,88 @@
+<!DOCTYPE html><!-- Indica el tipo de documento -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Pablo"/>
+<meta name="description" content="FAUFLORA: together we can make a difference"/>
+<meta name="keywords" content="Fauna, flora, animales, extinción"/>
+<title>PROYECTO EN GRUPO: Crisel, Sergio Azpiazu y Pablo </title>
+
+<meta name="viewport" content"width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<h1>FORMULARIO FAUFLORA </h1> <!-- Título -->
+	<form action="URL"  method="post" enctype="text/plain" name="formulario">
+	<h2> Antes de nada; mi página web </h2> <!-- Ejer 15, iframe -->
+	<iframe src="practica/pagina1.html"
+        title="FAUFLORA"
+        width="100%" height="800"></iframe>
+FORMULARIO 
+	<fieldset>
+	<legend>FAUFLORA: formulario de registro</legend>
+<label for="pregunta1"> Nombre y apellidos: </label> <!-- Ejer 5 -->
+	<input type="text" id="pregunta1" name="nomyap"/>
+
+<label>Indica tu edad:</label> <!-- Ejer 8, un numero-->
+	<input type="number" min="0" max="120" name="edad" required> <!-- Ejer 17 required -->
+
+<label>¿Cuál es tu fecha de nacimiento?</label><!-- Ejer 11 fecha -->
+	<input type="date" name="fecha"/>
+ 
+<label for="dni">Escribe tu DNI:</label> <!-- Ejer 14, respuesta con patrón --> 
+	<input type="text" name="DNI" pattern="[0-9]{8}-[A-Z]"placeholder="12345678-A"maxlength="9" minlength="9"required>
+
+<label>Sube una foto tuya para el perfil:</label> <!-- Ejer 12 foto -->
+	<input type="file" name="foto"/>
+
+</fieldset>
+<fieldset><!-- Ejer 4, uso del fieldset -->
+<legend>FAUFLORA: formulario de conocimiento</legend><!-- ejer 4, uso del legend-->
+
+<label>¿Por qué crees que hay especies en peligro de extinción?(selecciona una o varias)</label><br/> <!-- Ejer 6, checkbox -->
+	<input type="checkbox" name="pregunta2" value="resp1.1"/><label>Contaminación</label><br/>
+	<input type="checkbox" name="pregunta2" value="resp1.2"/><label>Consumo de carne animal</label><br/>
+	<input type="checkbox" name="pregunta2" value="resp1.3"/><label>Creación de zoos</label><br/>
+	<input type="checkbox" name="pregunta2" value="resp1.4"/><label>Depredadores naturales</label><br/> 
+<br>
+<label>¿Qué significa que una especie esté “en peligro de extinción”?</label><br/> <!-- Ejer 7, solo una eleccion -->
+	<input type="radio" name="pregunta3" value="resp2.1"/><label>Quedan pocos ejemplares y podría desaparecer</label><br/> 
+	<input type="radio" name="pregunta3" value="resp2.2"/><label>Ya ha desaparecido</label><br/>
+	<input type="radio" name="pregunta3"value="resp2.3"/><label>Es peligrosa para las personas</label><br/>
+	<input type="radio" name="pregunta3" value="resp2.4"checked><label>No lo sé</label><br/> <!-- Ejer 17, checked -->
+<br>
+<label for="numero">¿Cuántas especies en peligro de extinción sabrías nombrar?</label><br>
+	<input type="number" id="numero" name="pregunta4" min="0" max="100" placeholder="0"> <!-- Ejer 17 placeholder -->
+<br>
+<label>¿Qué grupo de animales crees que está más amenazado?</label><br/><!-- Ejer 9, un desplegable -->
+	<select name="pregunta5">
+		<option value="resp5.1"/>Mamíferos</option>
+		<option value="resp5.2"/>Aves</option>
+		<option value="resp5.3"/>Reptiles y anfibios</option>
+		<option value="resp5.4"/>Peces</option>
+	</select>
+<br>
+	<label for="color">Elige el color que, para ti, representa mejor a la naturaleza:</label><br> <!-- Ejer 10, un color -->
+        <input type="color"  name="color" value="#ff0000"/>
+<br>
+    <label for="cientifico">Dime el nombre científico de una especie:</label><br>
+        <input type="text" id="cientifico" name="cientifico"
+               pattern="[A-Z][a-z]+ [a-z]+" placeholder="Lynx pardinus"
+               title="Formato: Género especie, por ejemplo Lynx pardinus">
+</fieldset>
+	<fieldset>
+<label>Valora nuestra página:</label> <!-- Ejer 13, encuesta valora -->
+	<label>Inútil</label>
+		<input type="range" min="0" max="10" name="valoracion"/>
+	<label>Útil</label>
+
+	</fieldset>
+
+<input type="submit"  value="Enviar">
+<input type="reset"  value="Limpiar formulario"> <!-- Ejer 3, enviar formulario -->
+
+	</form>
+
+</body>
+<h4> ¡Muchas gracias por su tiempo! <h4>
+
+
